@@ -2,7 +2,7 @@
 
 const Client = require('socket.io-client')('http://localhost:3000',{
     extraHeaders : {
-        'authorization' : 'cats'
+        'authorization' : 'catss'
     }
 });
 

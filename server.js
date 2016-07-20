@@ -9,7 +9,8 @@ Server.listen(PORT,()=>{
 });
 
 Io.use((socket,next)=>{
-    var handShake = socket.request;
+    var handShake = socket.request.headers;
+    console.log(handShake.authorization);
     if ( handShake.authorization == 'cats' ){
         next();
     } else{
